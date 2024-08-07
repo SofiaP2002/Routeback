@@ -20,7 +20,7 @@ app.use(cors({
 
     origin:["https://deploy-back-six.vercel.app/"],
     methods:["POST","GET","PUT"],
-    credentials: true
+    
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
