@@ -18,8 +18,7 @@ const puerto = process.env.puerto || 3900;
 
 app.use(cors({
     origin:["https://deploy-back-six.vercel.app"],
-    methods:["POST", "GET", "PUT"],
-    credentials: true
+    methods:["POST", "GET", "PUT"]
 }))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
